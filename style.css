@@ -1,20 +1,25 @@
+/* global styling */
+
 :root {
     --accent_background: rgb(145, 179, 246);
     --main_fc: rgb(112, 112, 112);
     --accent_fc: rgb(255, 255, 255);
     --font_fam: 'Nunito Sans', sans-serif;
+    --accent_font: 'Roboto', sans-serif;
 }
 
 html {
-    height: 100%;
+    height: 1vh;
     width: 100%;
     color: var(--main_fc);
-    font-family: var(--font_fam)
+    font-family: var(--font_fam);
 }
 
-body {
-    margin: 0;
+p {
+    margin: auto;
 }
+
+/* header */
 
 .ul_nav {
     display: inline;
@@ -36,7 +41,6 @@ li a:visited {
 }
 
 header {
-    width: 100%;
     height: 100px;
     background: var(--accent_background);
     padding: 1% 0px 0px 2%;
@@ -46,4 +50,102 @@ h1 {
     margin: 0;
     font-weight: 900;
     font-size: 3em;
+}
+
+/* body */
+
+body {
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.left {
+    grid-area: left;
+    padding: 8%;
+    padding-right: 3%;
+    padding-top: 0;
+}
+
+#rushed {
+    width: 100%;
+}
+
+.right {
+    grid-area: right;
+    padding: 8%;
+    padding-left: 3%;
+    padding-top: 0;
+}
+
+.tagline {
+    font-size: 3em;
+    line-height: .9;
+}
+
+#tag1 {
+    margin-bottom: -5%;
+}
+#tag2 {
+    margin-bottom: 0;
+}
+
+#tag_highlight {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, #fca1a1 50%, #fca1a1 85%, rgba(255, 255, 255, 0) 85%, rgba(255, 255, 255, 0));
+    padding-bottom: -100px
+}
+
+.sub_tagline {
+    font-weight: 100;
+    width: 85%;
+}
+
+/* media query to control right side vertical spacing */
+
+@media (min-width: 1150px) {
+    .right {
+        padding-top: 30px;
+    }
+}
+
+/* Buttons on home screen */
+
+.button_div {
+    display: grid;
+    grid-template-areas: "right_left right_right";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    margin: auto;
+}
+
+.right_left {
+    grid-area: right_left;
+}
+
+.right_right {
+    grid-area: right_right;
+}
+
+.button {
+    width: 95%;
+    height: 30px;
+    background: var(--accent_background);
+    border-color: var(--accent_background);
+    border-radius: 9px;
+    border: hidden;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button_text {
+    color: var(--accent_fc);
+    font-family: var(--font_fam);
+    font-size: 1.3em;
 }
