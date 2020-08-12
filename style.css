@@ -44,6 +44,7 @@ header {
     height: 100px;
     background: var(--accent_background);
     padding: 1% 0px 0px 2%;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.233);
 }
 
 h1 {
