@@ -34,6 +34,7 @@ li a {
     text-align: center;
     text-decoration: none;
     padding: 0px 5px;
+    color: var(--accent_fc);
 }
 
 li a:visited {
