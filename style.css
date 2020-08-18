@@ -54,6 +54,15 @@ h1 {
     font-size: 3em;
 }
 
+#siteTitle {
+    text-decoration: none;
+    color: var(--accent_font)
+}
+
+#siteTitle:visited {
+    color: var(--accent_font)
+}
+
 /* body */
 
 body {
