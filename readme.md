@@ -1,0 +1,3 @@
+Every day, media company employees spend hours combing through news sources in order to compile the biggest stories of the past 24 hours into email newsblasts for their exuctives. The time spent searching for these stories and painstakingly copy/pasting the links amounts to a significant waste of time and energy. ClipSqueeze is a simple, easy to use wep application that allows you to track your favorite news sources and send their stories out with just a few clicks.
+
+Please view the working demo here: https://nebjamincode.github.io/Clips/
