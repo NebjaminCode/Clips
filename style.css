@@ -9,10 +9,11 @@
 }
 
 html {
-    height: 1vh;
+    height: 87vh;
     width: 100%;
     color: var(--main_fc);
     font-family: var(--font_fam);
+    margin: auto;
 }
 
 p {
@@ -63,13 +64,14 @@ h1 {
     color: var(--accent_font)
 }
 
-/* body */
+/* index body */
 
 body {
     margin: auto;
+    height: 100%;
 }
 
-main {
+#main_page_main {
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 50% 50%;
@@ -159,4 +161,30 @@ main {
     color: var(--accent_fc);
     font-family: var(--font_fam);
     font-size: 1.3em;
+}
+
+/* clips page */
+
+.clips_page {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: preview sources;
+    grid-template-columns: 50% 50%;
+}
+
+.clips_preview {
+}
+
+.clips_sources {
+}
+
+.panel_containers {   
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 13px;
+    background: lightgrey;
 }
